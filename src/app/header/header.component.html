@@ -1,0 +1,21 @@
+ <!-- Toolbar -->
+ <nav class="toolbar" role="banner">
+   <a href="" routerLink="property">
+    <img
+      width="40"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+  </a>
+    <span id="brand"><a href="" routerLink="property">ETS Salaka</a></span>
+      <div class="spacer"></div>
+      
+      <a id="signin" href="" routerLink="auth/signin" *ngIf="!isAuth">Signin</a>
+      <a id="about" href="" class="bg-warning" routerLinkActive="active" routerLink="about" *ngIf="!isAuth">About</a>
+      <a id="signout"  class="bg-warning" *ngIf="isAuth" routerLinkActive="active" routerLink="property/new" >new</a>
+      <a id="signout" (click)="onSignOut()" class="bg-danger" *ngIf="isAuth" routerLinkActive="active" routerLink="property" >signout</a>
+      <a  aria-label="salaka on facebook" target="_blank" rel="noopener" href="https://www.facebook.com/Etablissementslaka/" title="facebook" *ngIf="!isAuth">
+        <i id="facebook-logo" class="bi bi-facebook"></i>
+      </a>
+</nav>
+  

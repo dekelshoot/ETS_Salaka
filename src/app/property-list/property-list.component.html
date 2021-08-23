@@ -1,0 +1,57 @@
+<div >
+    
+<nav  aria-label="breadcrumb">
+    <ol class="breadcrumb" style="position: absolute; left: 5%;">
+      <li class="breadcrumb-item"><a routerLink="property" href="#">Accueil</a></li>
+    </ol>
+</nav>
+
+<br><hr><br>
+<app-search></app-search>
+<hr>
+<app-category></app-category>
+<br><hr>
+
+
+
+<h6 style="color:#0d6efd ;" class="float-end text-2">Toutes les Annonces</h6>
+<h6 style="color:#0d6efd ;"  class="text-2">Annonces les plus récentes</h6> 
+ 
+<div class="property " *ngIf="start">
+    <button class="btn"
+            *ngFor = "let property of propertys ; let i=index ; " 
+            (click)="onViewProperty(i)">
+        <span class="card-cont">
+            <div class="card">
+                <div class="card-image" >
+                    <img  style="width: 100%;" [src]="property.photo[0]">
+                </div>
+                <div class="card-text">
+                    <span class="date">
+                        {{property.publicationDate | date : 'd MMM y'}} à {{property.publicationDate | date : 'h:mm'}}
+                    </span>
+                    <br>
+                    <span class="title">{{property.title}}</span>
+                    <br>
+                    <span class="category">{{property.category}}</span>
+                    <p class="lacation">{{property.location}}</p>
+                </div>
+                <div class="card-stats ">
+                    <p class="prices">{{property.prices}} FCFA</p>
+                </div>
+            </div>
+        </span>
+    </button>    
+</div>
+
+<hr>
+</div>
+
+
+<div *ngIf="!start" style="font-size: 20px;" style="align-items: center; text-align: center;"> 
+    <br><br><br><br><br><br>
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+</div>

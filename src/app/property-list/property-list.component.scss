@@ -1,0 +1,485 @@
+.breadcrumb{
+    a{
+        text-decoration:none; 
+        color: #025bbb;
+        border-bottom:2px solid #0062cc;
+      }
+}
+
+.property{
+    justify-content:space-between;
+    align-items: center;
+}
+
+.text-2{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+  .bi-search{
+      font-size: 15px;
+  }
+  .bi-search:hover{
+      color: white;
+  }
+ 
+
+  @media screen and (max-width: 767px) {
+  
+    .space{
+        display: none;
+    }
+    
+
+  }
+  .text-2{
+    font-size: 15px;
+}
+
+.property{
+    width: 1000px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 7px;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+
+.card{
+    width: 210px;
+    display: grid;
+    grid-template-columns: 210px;
+    grid-template-rows: 170px 150px 30px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    .card-image{
+        overflow: hidden;
+        grid-area: image;
+        // background: url("../../assets/photo.jpg");
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        background-size: cover;
+    }
+    
+    .card-text{
+        grid-area: text;
+        margin: 25px;
+
+        .date{
+            color: #0d6efd;
+            font-size: 13px;
+        }
+
+        .title{
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .location{
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        p, span{
+            color: grey;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        h2{
+            margin-top: 0px;
+            font-size: 28px;
+        }
+    }
+    
+    .card-stats{
+        grid-area:stats;
+        display: grid;
+       text-align: center;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        background: #0d6efd;
+
+        .prices{
+            font-weight:900;
+            color: white;
+             
+         }
+ 
+    }
+
+
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0,0,0.6);
+}
+
+@media  screen and (max-width: 1080px) {
+    .property{
+        width: 880px;
+        
+    }
+    .card{
+        width: 250px;
+        grid-template-columns: 250px;
+        grid-template-rows: 170px 150px 20px;
+
+        .card-text{
+            grid-area: text;
+            margin: 15px; 
+            
+            .title{
+                font-size: 17px;
+            }
+        }
+      
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .property{
+        width: 90%;
+    }
+    .card{
+        width: 235px;
+        grid-template-columns: 235px;
+        grid-template-rows: 150px 130px 20px;
+
+        .card-text{
+            grid-area: text;
+            margin: 15px;            
+        }
+      
+    }
+}
+
+@media  screen and (max-width: 965px) {
+    .property{
+        width: 95%;
+    }
+}
+
+@media  screen and (max-width: 917px) {
+
+    .card{
+        width: 220px;
+        grid-template-columns: 220px;
+      
+    }
+}
+@media  screen and (max-width: 868px) {
+
+    .card{
+        width: 210px;
+        grid-template-columns: 210px;
+      
+    }
+}
+
+@media  screen and (max-width: 839px) {
+
+    .card{
+        width: 200px;
+        grid-template-columns: 200px;
+      
+    }
+}
+
+@media  screen and (max-width: 810px) {
+
+    .card{
+        width: 190px;
+        grid-template-columns: 190px;
+        grid-template-rows: 150px 100px 20px;
+
+        .card-text{
+            margin: 0px;
+    
+            .date{
+                font-size: 12px;
+            }
+    
+            .title{
+                font-size: 14px;
+            }
+    
+            .location{
+                font-size: 10px;
+            }
+    
+            p, span{
+                font-size: 12px;
+            }
+    
+        }
+      
+    }
+}
+
+@media  screen and (max-width: 776px) {
+
+    
+
+    .card{
+        width: 180px;
+        grid-template-columns: 180px;
+      
+    }
+}
+
+@media  screen and (max-width: 740px) {
+    .property{
+        width: 99%;
+        align-items: center;
+        padding: 2px;
+        
+    }
+    .card{ 
+        width: 190px;
+        grid-template-columns: 190px;
+        grid-template-rows: 145px 120px 20px;
+
+        .card-text{
+            grid-area: text;
+            margin: 0px;
+    
+            .date{
+                color: #0d6efd;
+                font-size: 10px;
+            }
+    
+            .title{
+                font-size: 15px;
+                font-weight: 700;
+            }
+    
+            .location{
+                font-size: 9px;
+                font-weight: 700;
+            }
+    
+           
+    
+            h2{
+                margin-top: 0px;
+                font-size: 12px;
+            }
+        }
+        
+        .card-stats{
+            .prices{
+                font-size: 13px;
+                 
+             }
+     
+        }
+    
+    
+    }
+    
+}
+
+@media  screen and (max-width: 708px) {
+
+    .card{
+        width: 175px;
+        grid-template-columns: 175px;
+      
+    }
+}
+
+@media  screen and (max-width: 665px) {
+    .property{
+        
+        align-items: center;
+        margin-left: 3px;
+    }
+    .card{ 
+        width: 255px;
+        grid-template-columns: 255px;
+        grid-template-rows: 145px 120px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 602px) {
+    .property{
+        
+        align-items: center;
+    }
+    .card{ 
+        width: 235px;
+        grid-template-columns: 235px;
+        grid-template-rows: 145px 120px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 592px) {
+    .card{ 
+        width: 220px;
+        grid-template-columns: 220px;
+    }
+    
+}
+
+@media  screen and (max-width: 552px) {
+    .card{ 
+        width: 205px;
+        grid-template-columns: 205px;
+    }
+    
+}
+
+@media  screen and (max-width: 545px) {
+    .text-2{
+        font-size: 12px;
+    }
+    .card{ 
+        width: 200px;
+        grid-template-columns: 200px;
+        grid-template-rows: 135px 120px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 511px) {
+    .card{ 
+        width: 170px;
+        grid-template-columns: 170px;
+        grid-template-rows: 135px 125px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 472px) {
+    .card{ 
+        width: 160px;
+        grid-template-columns: 160px;
+        grid-template-rows: 115px 115px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 439px) {
+    .card{ 
+        width: 150px;
+        grid-template-columns: 150px;
+        grid-template-rows: 115px 115px 20px;
+    }
+    
+}
+
+
+@media  screen and (max-width: 410px) {
+    .card{ 
+        width: 140px;
+        grid-template-columns: 140px;
+        grid-template-rows: 115px 115px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 389px) {
+    .card{ 
+        width: 130px;
+        grid-template-columns: 130px;
+        grid-template-rows: 115px 115px 20px;
+    }
+    
+}
+
+@media  screen and (max-width: 369px) {
+    .text-2{
+        font-size: 10px;
+    }
+    .card{ 
+        width: 120px;
+        grid-template-columns: 120px;
+        grid-template-rows: 80px 100px 15px;
+
+        .card-text{
+            grid-area: text;
+            margin: 0px;
+    
+            .date{
+                color: #0d6efd;;
+                font-size: 8px;
+            }
+    
+            .title{
+                font-size: 10px;
+                font-weight: 600;
+            }
+    
+            .location{
+                font-size: 9px;
+                font-weight: normal;
+            }
+    
+            p, span{
+                color: grey;
+                font-size: 9px;
+                font-weight: normal;
+            }
+    
+            h2{
+                margin-top: 0px;
+                font-size: 10px;
+            }
+        }
+        .card-stats{
+            .prices{
+                font-weight:700;
+                font-size: 10px;
+                 
+             }
+     
+        }
+    }
+    
+}
+
+@media  screen and (max-width: 349px) {
+    .card{ 
+        width: 110px;
+        grid-template-columns: 110px;
+    }
+    
+}
+
+@media  screen and (max-width: 328px) {
+    .card{ 
+        width: 100px;
+        grid-template-columns: 100px;
+    }
+    
+}
+
+@media  screen and (max-width: 310px) {
+    .card{ 
+        width: 90px;
+        grid-template-columns: 90px;
+    }
+    
+}
+
+
+
+
+
+
+    

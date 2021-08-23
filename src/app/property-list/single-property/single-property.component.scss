@@ -1,0 +1,57 @@
+a{
+    text-decoration: none;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(181, 181, 181);
+
+}
+
+
+
+.minav{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 20px rgba(0, 0, 1, 0.255);
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.informations{
+    width: 100%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 1, 0.255);
+    padding: 20px;
+    
+}
+
+.bold{
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+@media  screen and (max-width: 720PX) { 
+    .slider{
+        width: 100%;
+
+    }  
+    
+
+}
+
+@media  screen and (max-width: 450PX) { 
+    
+    .title{
+
+        font-size: 170%;
+    }
+
+}

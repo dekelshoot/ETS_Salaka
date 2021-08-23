@@ -1,0 +1,43 @@
+body{
+    background: #eee;
+}
+span{
+    font-size:15px;
+}
+a{
+  text-decoration:none; 
+  color: #0062cc;
+  border-bottom:2px solid #0062cc;
+}
+.box{
+    padding:0px 0px;
+
+    .box-part{
+        background:#FFF;
+        border-radius:0;
+        padding:10px 10px;
+        margin:30px 0px;
+       
+
+        .bi{
+            color:#428ef1;
+            font-size: 50px;
+       }
+
+        .text{
+            margin:20px 0px;
+        }
+
+    }
+
+    .box-part:hover{
+        border-radius: 5px;
+        border: #428ef1 2px solid;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    }
+}
+
+
+
+

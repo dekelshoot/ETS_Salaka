@@ -1,0 +1,102 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+.toolbar {
+    z-index: 1000;
+    position: absolute;
+    position:fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+
+    img {
+        margin: 0 16px;
+    }
+
+    #brand{
+        font-size:23px;
+    }
+    
+    #about{
+        margin: 0 8px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #signout{
+        margin: 0 8px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #signin{
+        margin: 0 8px;
+    }
+
+    
+    #facebook-logo {
+      height: 40px;
+      font-size: 20px;
+      margin: 0 16px;
+    }
+    
+   
+    #facebook-logo:hover,
+    #signin:hover,#about:hover,#signout:hover {
+        opacity: 0.8;
+        
+      }
+  }
+  .spacer {
+    flex: 1;
+  }
+ 
+
+ /* Responsive Styles */
+ @media screen and (max-width: 767px) {
+  
+    .toolbar {
+        height: 40px;
+        font-weight: 600;
+    
+        img {
+            margin: 0 10px;
+            width:30px;
+        }
+    
+        #brand{
+            font-size:15px;
+        }
+        
+        #about{
+            margin: 0 5px;
+            font-size:12px;
+        }
+    
+        #signin{
+            font-size: 12px;
+            margin: 0 5px;
+        }
+    
+        
+        #facebook-logo {
+          height: 40px;
+          font-size: 15px;
+          margin: 0 16px;
+        }
+        
+      }
+    
+
+  }
+
+  @media screen and (max-width: 575px) {
+    
+  }

@@ -1,0 +1,30 @@
+<nav  aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="property" href="#">Accueil</a></li>
+      <li class="breadcrumb-item active"  aria-current="page">signin</li>
+    </ol>
+</nav>
+
+<br>
+<div class="row cont">
+    <div class="col-sn-8 col-sn-offst-2">
+        <h2>Connexion au compte </h2>
+        <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" class="form-control" formControlName = "email">
+            </div>
+            <div class="form-group">
+                <label for="email">Mot de passe:</label>
+                <input type="password" id="password" class="form-control" formControlName = "password"> <br>
+                <button class="btn btn-primary" type="submit" [disabled]="signInForm.invalid" >Connexion</button>
+                <div class="spinner-border text-warning" role="status" *ngIf="loading">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            </div>
+        </form>
+        <p class="text-danger">{{ errorMessage}}</p>
+    </div>
+</div>
+
+
